@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виолетта Павловна | Репетитор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <!-- ШАПКА С ИМЕНЕМ -->
+<div class="hero-section">
+    <header class="header">
+        <h1 class="name">Ваш репетитор по математике</h1>
+        <p class="title">Виолетта Павловна </p>
+        <div class="divider"></div>
+    </header>
+
+    <!-- ФОТО -->
+    <div class="photo-wrapper">
+        <img src="images/foto.png" alt="Виолетта Игоревна, репетитор" class="photo">
+    </div>
+</div>
+
+    <!-- 🔥 АКЦИЯ ПРО 3 НЕДЕЛИ (НАВЕРХУ) 🔥 -->
+    <section class="card promotion">
+        <div class="promotion-badge">🔥 Успейте записаться 🔥</div>
+        <h2>Уже готовы к новому учебному году?</h2>
+        <p>Почему эфективно начать летом: </p>
+    <p> Лето — идеальное время, чтобы без стресса и спешки подтянуть математику. </p>
+<p>Помогу вашему ребёнку закрыть пробелы прошлого года, спокойно разобрать сложные темы и уверенно начать сентябрь без школьного адаптационного кризиса. </p>
+        <p><strong>Результат: понятная теория, лёгкое выполнение ДЗ, повышение успеваемости.</strong></p>
+    </section>
+
+    <!-- ОБО МНЕ (ОСНОВНАЯ РАБОТА) -->
+    <section class="card">
+        <h2>📖 Обо мне</h2>
+        <p>Я — частный репетитор. Помогаю школьникам и взрослым с разными задачами: подготовка к экзаменам, повышение успеваемости, разбор сложных тем, помощь с домашними заданиями.</p>
+        <p>✔️ Индивидуальный подход под каждого ученика<br>
+           ✔️ Объясняю просто и понятно<br>
+           ✔️ Опыт подготовки к экзаменам<br>
+           ✔️ Занимаемся онлайн - тратим силы на знания, а не на дорогу<br>
+           ✔️ Обратная связь с родителями - вы всегда в курсе прогресса</p>
+    </section>
+
+    <!-- ЧТО ПРЕДЛАГАЮ (РАЗНЫЕ УСЛУГИ) -->
+    <section class="card">
+        <h2>🎯 Что я предлагаю</h2>
+        <div class="services">
+            <div class="service-item">✅ Подготовка к экзаменам 9 класс</div>
+            <div class="service-item">✅ Повышение успеваемости по школьной программе</div>
+            <div class="service-item">✅ Помощь с домашними заданиями</div>
+            <div class="service-item">✅ Разбор отдельных сложных тем</div>
+            <div class="service-item">✅ Ситематические тестирования знаний</div>
+            <div class="service-item">✅ Индивидуальные запросы</div>
+        </div>
+    </section>
+
+    <!-- СТОИМОСТЬ -->
+    <section class="card">
+        <h2>💰 Стоимость занятий</h2>
+        <div class="price-list">
+            <div class="price-item">
+                <span class="price-hours">60 минут / 3 раза в неделю </span>
+                <span class="price-cost">30 BYN</span>
+            </div>
+            <div class="price-item">
+                <span class="price-hours">60 минут / 2 раза в неделю</span>
+                <span class="price-cost">35 BYN</span>
+            </div>
+            <div class="price-item">
+                <span class="price-hours">60 минут / 1 раз в неделю</span>
+                <span class="price-cost">40 BYN</span>
+            </div>
+            <div class="price-item">
+                <span class="price-hours">Пробное занятие</span>
+                <span class="price-cost">бесплатно!</span>
+            </div>
+        </div>
+        <p class="price-note">* Работаю с учениками любого уровня. Первое занятие — знакомство и диагностика.</p>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="card contact-card">
+        <h2>📞 Связаться со мной</h2>
+        <p>Напишите в Telegram или Запишитесь на пробное — договоримся о времени и формате занятий.</p>
+        <div class="buttons">
+            <button class="btn telegram" id="telegramBtn">📱 Telegram</button>
+            <button class="btn trial-btn" id="openModalBtn">🎓 Записаться на пробное</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Виолетта Павловна — репетитор</p>
+        <!-- ФОРМА ЗАПИСИ НА ПРОБНОЕ -->
+
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+<!-- МОДАЛЬНОЕ ОКНО С ФОРМОЙ -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2>📝 Записаться на пробное занятие</h2>
+        <p>Заполните форму, и я свяжусь с вами</p>
+
+        <form id="trialFormElement">
+            <!-- Кто вы -->
+            <div class="form-group">
+                <label>Кто вы? <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="whoIs" value="ученик" checked> Я ученик
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="whoIs" value="родитель"> Я родитель
+                    </label>
+                </div>
+            </div>
+
+            <!-- Блок для ученика -->
+            <div id="studentBlock">
+                <div class="form-group">
+                    <label>Ваше имя и фамилия <span class="required">*</span></label>
+                    <input type="text" name="studentName" class="form-input" placeholder="Иванов Иван" required>
+                </div>
+                <div class="form-group">
+                    <label>Номер телефона ученика <span class="required">*</span></label>
+                    <input type="tel" name="studentPhone" class="form-input" placeholder="+375 29 123-45-67" required>
+                </div>
+                <div class="form-group">
+                    <label>Номер телефона родителя</label>
+                    <input type="tel" name="parentPhoneStudent" class="form-input" placeholder="+375 29 987-65-43 (если есть)">
+                </div>
+            </div>
+
+            <!-- Блок для родителя -->
+            <div id="parentBlock" style="display: none;">
+                <div class="form-group">
+                    <label>Ваше имя и фамилия <span class="required">*</span></label>
+                    <input type="text" name="parentName" class="form-input" placeholder="Иванова Анна" required>
+                </div>
+                <div class="form-group">
+                    <label>Ваш номер телефона <span class="required">*</span></label>
+                    <input type="tel" name="parentPhone" class="form-input" placeholder="+375 29 123-45-67" required>
+                </div>
+                <div class="form-group">
+                    <label>Имя и фамилия ребенка <span class="required">*</span></label>
+                    <input type="tel" name="parentPhone" class="form-input" placeholder="+375 29 123-45-67" required>
+                </div>
+            </div>
+
+    
+
+            <!-- Класс ребенка -->
+            <div class="form-group">
+                <label>Класс ребенка <span class="required">*</span></label>
+                <input type="text" name="childClass" class="form-input" placeholder="9 класс" required>
+            </div>
+
+            <!-- Дата и время -->
+            <div class="form-group">
+                <label>Дата и время пробного занятия <span class="required">*</span></label>
+                <input type="text" name="datetime" class="form-input" placeholder="например: 25 мая 2026, 16:00" required>
+            </div>
+
+            <!-- Подробности -->
+            <div class="form-group">
+                <label>Подробности / вопросы</label>
+                <textarea name="details" class="form-textarea" rows="4" placeholder="Что нужно разобрать? Есть ли особенности?"></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn">📩 Получить обратную связь</button>
+            <div id="formMessage" class="form-message"></div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
